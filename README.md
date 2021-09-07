@@ -1,2 +1,7 @@
-# sdtm2omop
-SDTM to OMOP via UMLS
+# SDTM to OMOP via UMLS
+
+TBD
+
+## Author
+
+Ken Youens-Clark <kyclark@c-path.org>
