@@ -1,0 +1,3 @@
+Code	Codelist Code	Codelist Extensible (Yes/No)	Codelist Name	CDISC Submission Value	CDISC Synonym(s)	CDISC Definition	NCI Preferred Term
+C64432	C65047		Laboratory Test Code	ALP	Alkaline Phosphatase	A measurement of the alkaline phosphatase in a biological specimen.	Alkaline Phosphatase Measurement
+C64432	C67154		Laboratory Test Name	Alkaline Phosphatase	Alkaline Phosphatase	A measurement of the alkaline phosphatase in a biological specimen.	Alkaline Phosphatase Measurement
