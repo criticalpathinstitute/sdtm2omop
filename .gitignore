@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 data/sdtm_terms.txt
+data/MRCONSO.RRF
