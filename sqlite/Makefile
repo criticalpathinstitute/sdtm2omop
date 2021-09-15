@@ -13,5 +13,8 @@ umlsload:
 snoload:
 	./load_snomed.py -d $(DB) ../data/snomed/CONCEPT.tsv
 
+link:
+	./link.py -d $(DB) ../data/sdtm_terms.txt
+
 install:
 	python3 -m pip install -r requirements.txt

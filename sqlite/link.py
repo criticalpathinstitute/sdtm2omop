@@ -62,13 +62,13 @@ def main() -> None:
 
     args = get_args()
     reader = csv.DictReader(args.sdtm_file, delimiter='\t')
-    seen = set()
-
-    print('\t'.join([
+    out_flds = [
         'sdtm_ct_code', 'cdisc_submission_value', 'cui', 'snomed_code',
         'concept_id'
-    ]),
-          file=args.out_file)
+    ]
+    print('\t'.join(out_flds), file=args.out_file)
+
+    seen = set()
 
     for rec in reader:
         # pprint(rec)
