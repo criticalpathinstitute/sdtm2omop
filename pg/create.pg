@@ -1,0 +1,48 @@
+--
+-- Created by SQL::Translator::Producer::PostgreSQL
+-- Created on Tue Oct 19 08:29:33 2021
+--
+--
+-- Table: snomed_concept
+--
+CREATE TABLE "snomed_concept" (
+  "snomed_concept_id" integer NOT NULL,
+  "concept_id" text,
+  "concept_name" text,
+  "domain_id" text,
+  "vocabulary_id" text,
+  "concept_class_id" text,
+  "standard_concept" text,
+  "concept_code" text,
+  "valid_start_date" text,
+  "valid_end_date" text,
+  "invalid_reason" text,
+  PRIMARY KEY ("snomed_concept_id")
+);
+CREATE INDEX "concept_code" on "snomed_concept" ("concept_code");
+
+--
+-- Table: umls_concept
+--
+CREATE TABLE "umls_concept" (
+  "cui" text,
+  "language" text,
+  "term_status" text,
+  "lui" text,
+  "string_type" text,
+  "sui" text,
+  "atom_status" text,
+  "aui" text,
+  "saui" text,
+  "scui" text,
+  "sdui" text,
+  "source_name" text,
+  "term_type" text,
+  "code" text,
+  "string" text,
+  "srl" text,
+  "suppress" text,
+  "cvf" text
+);
+CREATE INDEX "cui" on "umls_concept" ("cui");
+

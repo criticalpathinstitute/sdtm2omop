@@ -1,0 +1,35 @@
+CREATE TABLE snomed_concept (
+    snomed_concept_id integer primary key,
+    concept_id text,
+    concept_name text,
+    domain_id text,
+    vocabulary_id text,
+    concept_class_id text,
+    standard_concept text,
+    concept_code text,
+    valid_start_date text,
+    valid_end_date text,
+    invalid_reason text
+);
+CREATE INDEX concept_code on snomed_concept (concept_code);
+CREATE TABLE umls_concept(
+  "cui" TEXT,
+  "language" TEXT,
+  "term_status" TEXT,
+  "lui" TEXT,
+  "string_type" TEXT,
+  "sui" TEXT,
+  "atom_status" TEXT,
+  "aui" TEXT,
+  "saui" TEXT,
+  "scui" TEXT,
+  "sdui" TEXT,
+  "source_name" TEXT,
+  "term_type" TEXT,
+  "code" TEXT,
+  "string" TEXT,
+  "srl" TEXT,
+  "suppress" TEXT,
+  "cvf" TEXT
+);
+CREATE INDEX cui on umls_concept (cui);
