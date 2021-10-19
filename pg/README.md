@@ -16,5 +16,5 @@ $ psql concepts < create.pg
 Then I loaded the UMLS _MRCONSO.csv_ data using the `psql` console:
 
 ```
-\COPY umls_concept from 'MRCONSO.csv' DELIMITER E',' CSV ENCODING 'UTF8';
+\COPY umls_concept from 'MRCONSO.csv' DELIMITER E',' CSV HEADER ENCODING 'UTF8';
 ```
